@@ -1,0 +1,144 @@
+:root{
+  --green: hsl(75, 94%, 57%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+  --white: hsl(0, 0%, 100%);
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+  font-style: normal;
+}
+
+body{
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: clamp(2rem, 5vw, 5rem) 1rem;  
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--grey-900);
+}
+
+.profile-card{
+  background-color: var(--grey-800);
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem;
+  border-radius: 12px;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 50%;
+  margin: 0;
+}
+
+.avatar img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.bio {
+  color: var(--green);
+  font-weight: bold;
+}
+
+.time {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.social-links{
+  width: 100%;
+}
+
+.social-links ul {
+  /* width: 100%; */
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-links ul li{
+  width: 100%;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links a {
+  width: 100%;
+    border: none;
+    padding: 1rem;
+    border-radius: .5rem;
+    color: var(--white);
+    background-color: var(--grey-700);
+    font-weight: bold;
+    font-size: 0.875rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+  background-color: var(--green);
+  outline: none;
+}
+
+/* Hobbies & Dislikes */
+section {
+  width: 100%;
+}
+
+section h2 {
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+section ul {
+  list-style: disc;
+  text-align: left;
+}
+
+section ul li{
+  color: var(--white);
+}
+
+h1,p{
+  color: var(--white);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .social-links a:hover{
+  transition: none;
+  }
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .bio,
+  .time,
+  section {
+    width: 100%;
+  }
+}
+
+@media (max-width:425px) {
+  .profile-card{
+    width: 100%;
+    padding: 1rem;
+  }
+}

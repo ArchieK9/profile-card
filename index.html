@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Profile Card</title>
+  </head>
+  <body>
+    <article data-testid="test-profile-card" class="profile-card">
+
+  
+      <figure class="avatar">
+        <img 
+          src="./assets/images/Profile-Img-ALX.png" 
+          alt="Profile photo of Achilike Justice" 
+          data-testid="test-user-avatar"
+        />
+      </figure>
+
+      <header>
+        <h1 data-testid="test-user-name">Achilike Justice Kelechi</h1>
+      </header>
+  
+      <p data-testid="test-user-bio" class="bio">
+        A passionate frontend developer who loves creating accessible and user-friendly web experiences.
+      </p>
+  
+      <p class="time">
+        Current Time (ms): 
+        <span data-testid="test-user-time"></span>
+      </p>
+  
+      <nav data-testid="test-user-social-links" class="social-links">
+        <ul>
+          <li>
+            <a 
+              href="https://x.com/ArchieJK9" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              data-testid="test-user-social-twitter"
+            >
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a 
+              href="https://github.com/ArchieK9" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              data-testid="test-user-social-github"
+            >
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a 
+              href="https://www.linkedin.com/in/justice-" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              data-testid="test-user-social-linkedin"
+            >
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </nav>
+  
+      <section class="hobbies">
+        <h2>Hobbies</h2>
+        <ul data-testid="test-user-hobbies">
+          <li>Coding</li>
+          <li>Reading</li>
+          <li>Designing</li>
+        </ul>
+      </section>
+  
+      <section class="dislikes">
+        <h2>Dislikes</h2>
+        <ul data-testid="test-user-dislikes">
+          <li>Ignorance</li>
+          <li>Procrastination</li>
+          <li>Dishonesty</li>
+        </ul>
+      </section>
+    </article>
+  
+    <script src="script.js"></script>
+  </body>
+</html>
