@@ -2,7 +2,7 @@
 
 ## 🚀 Description
 
-A responsive, accessible Profile Card built with HTML, CSS, and JavaScript.  
+A responsive, accessible Profile Card built with HTML, and CSS.  
 All elements include `data-testid` attributes for automated testing.
 
 ## 📋 Features
